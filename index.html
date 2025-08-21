@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Concurso Interactivo por Área</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+
+  <h1>🎓 Concurso del Saber Nivel Primaria</h1>
+
+  <input type="file" accept=".xlsx" onchange="leerArchivo(event)">
+  <select id="selectorHoja" onchange="cargarHoja()" style="display:none;"></select>
+
+  <div id="pregunta">Carga un archivo para comenzar</div>
+
+  <div id="opciones">
+    <button id="btnA" class="opcion" onclick="seleccionar('A')">A</button>
+    <button id="btnB" class="opcion" onclick="seleccionar('B')">B</button>
+    <button id="btnC" class="opcion" onclick="seleccionar('C')">C</button>
+  </div>
+
+  <div id="temporizador">⏳</div>
+  <div id="resultado"></div>
+  <div class="puntaje">
+        <div id="contador">
+        👍Respuestas Correctas   0
+        </div>
+        <div id="contador2">
+        👎Respuestas Incorrectas 0
+        </div>
+    </div>
+
+  <button onclick="nuevaPregunta()">📚 Nueva Pregunta</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

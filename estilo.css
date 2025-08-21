@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f7;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+select, input[type="file"], button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+#pregunta {
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+button.opcion {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  width: 60%;
+}
+
+.correcta {
+  background-color: #a3e4a3;
+  border: 2px solid green;
+  font-weight: bold;
+}
+
+.incorrecta {
+  background-color: #f8caca;
+  border: 2px solid red;
+  font-weight: bold;
+}
+
+.seleccionada {
+  background-color: #fff3b0;
+  border: 2px solid #f1c40f;
+  font-weight: bold;
+}
+
+#temporizador, #resultado, #contador, #contador2 {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
